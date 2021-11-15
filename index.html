@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>LaundryTechDesign</title>
+</head>
+<body>
+    <div id="start"></div>
+    <header>
+        <div class = "nav_bar">
+            <div id="logo"><a href="#start">LDesign</a></div>
+            <nav class="desctop">
+                <ul>
+                    <li><a href="#about_us">about us</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#our_team">our team</a></li>
+                    <li><a class="external_link" target="_blank" href="https://jdc-cis.com">distribution</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="#about_us"><img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QDBGIAXGLAT3VHLCTYEAFHHI5UY%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B73013261-132C-4EDD-B14F-04014E747698%7D%2C2%22&encodeFailures=1&width=1198&height=888&srcWidth=&srcHeight=" alt=""></a></li>
+                    <li><a href="#projects"><img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QDZ55F6TCMYXZDIVTL7DPDHJFQE%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BE94BEF79-9889-46BE-8ACD-7F1BC6749604%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt=""></a></li>
+                    <li><a href="#our_team"><img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QBFNCQKMBD55ZHJUZBXYNB4EOUT%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BA6A06825-7D04-4EEE-9A64-37C343C23A93%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt=""></a></li>
+                    <li><a class="external_link" target="_blank" href="https://jdc-cis.com"><img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QDBHDE52WLNSZGZ3X5GNQ7J3ERY%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BDDC93861-6D59-4D96-9DDF-A66C3E9D9238%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="banner text">
+            <h1>Laundry Design</h1>
+            <h2>Bringing changes in idustry</h2>
+            <h4>Professional process design</h4>
+        </div>
+    </div>
+    <section>
+        <div id="about_us">
+            <div class = "heading">
+                <h2>About us</h2>
+            </div>
+            <div class ="abouts">
+                <div class = "about">
+                    <p>We are independent international engineering and consultancy service provider in the fild of laundry process design. 
+                    We help our client to build efficient laundry business of any size and scales from the scratch.
+                    We provide deep expertise, global insight and innovative solutions for all types of laundry enterprises.
+                    </p>
+                </div>
+                <div class="solution_list">
+                    <div class="solutions">
+                        <div class="solution_picture">
+                            <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QEJV5IZ6SBYN5AZZWOQGMOICRG6%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B9F51AF89-3848-416F-9CD9-D0331C8144DE%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                        </div>
+                        <div class="solution_text">
+                            <h2>heavy-duty laundry</h2>
+                            <br>
+                            <ul>
+                                <li>Process Design</li>
+                                <li>Capacity calculation</li>
+                                <li>Equipment specification</li>
+                                <li>Chemical suppling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="solutions">
+                        <div class="solution_picture">
+                            <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QB3V26QOM2SLBH24GG5KAPTVNA4%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B07BDAE3B-5233-4F58-AE18-DD501F3AB41C%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                        </div>
+                        <div class="solution_text">
+                            <h2>wet cleaning</h2>
+                            <br>
+                            <ul>
+                                <li>Process Design</li>
+                                <li>Capacity calculation</li>
+                                <li>Equipment specification</li>
+                                <li>Chemical suppling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="solutions">
+                        <div class="solution_picture">
+                            <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QFGHML63HE24JFKCOYLIUTHOAYI%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BED173BA6-9A9C-4AE2-A13B-0B4526770308%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                        </div>
+                        <div class="solution_text">
+                            <h2>dry cleaning</h2>
+                            <br>
+                            <ul>
+                                <li>Process Design</li>
+                                <li>Capacity calculation</li>
+                                <li>Equipment specification</li>
+                                <li>Chemical suppling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="solutions">
+                        <div class="solution_picture">
+                            <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QEQ5COSH4BEYFBY2NQPI7B5O3EU%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B239DE890-24F0-43C1-8D36-0F47C3D76C94%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                        </div>
+                        <div class="solution_text">
+                            <h2>OPL laundry</h2>
+                            <br>
+                            <ul>
+                                <li>Process Design</li>
+                                <li>Capacity calculation</li>
+                                <li>Equipment specification</li>
+                                <li>Chemical suppling</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="projects">
+            <div class = "heading">
+                <h2>Projects</h2>
+            </div>
+            <div class="drawings">
+                <div class=drawing>
+                    <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QC2SONSZ25VKBHIDVOIN2N3RDYF%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B2C9B935A-B5EB-4E50-81D5-C86E9BB88F05%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    <h3>Solution for industrial laundry</h3>
+                </div>
+                <div class=drawing>
+                    <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QB2EM47EGJV2JHII66GKEAF5NLE%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BF239233A-3519-4ED2-847B-C651005EB564%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    <h3>Solution for OPL hotel laundry</h3>
+                </div>
+                <div class=drawing>
+                    <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QA52S732KB3VRFJVPCPIMH6EWFU%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7BBDBFD41D-3B28-4AAC-9ABC-4F430FE258B4%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    <h3>Solution for Wet Cleaning</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="our_team">
+            <div class="heading">
+                <h2>Our Team</h2>
+            </div>
+            <div class="team_section">
+                <div class="person">
+                    <div class="photo">
+                        <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jfif&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QASE7AWXA72DFB27P4TVX4XXSEW%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B6BC12712-FA83-4319-AFBF-93ADF97BC896%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    </div>
+                    <div class="bio">
+                        <h2>Valentyn Kolesnichenko</h2>
+                        <h4>Process Engineer</h4>
+                        <p>Project and solution engineer, MER designer and process flow specialist</p>
+                        <p class="email">email@email.com</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="photo">
+                        <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jfif&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QDZBXFYGGPGEJCYPAQANBVHSGM5%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B83CB0D79-E619-4522-8782-00686A79199D%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    </div>
+                    <div class="bio">
+                        <h2>Dmytro Balarych</h2>
+                        <h4>Heavy-duty and OP laundry Professional</h4>
+                        <p>Expert in key-turn soluitons for laundries of any capacity and scales<p>
+                        <p class="email">email@email.com</p>
+                    </div>
+                </div>
+                <div class="person">
+                    <div class="photo">
+                        <img src="https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jfif&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QFG7PBSETG4TRDIBCNZ7IZ5KE3J%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B22C3FBA6-DC4C-469C-8089-B9FA33D51369%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=" alt="">
+                    </div>
+                    <div class="bio">
+                        <h2>Guntars Rekis</h2>
+                        <h4>Dry and Wet Cleaning Professional</h4>
+                        <p>Experienced specialist in commercial wet and dry cleaning</p>
+                        <p class="email">email@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2021 all rights are reserved</p>
+    </footer>
+    
+</body>
+</html>
