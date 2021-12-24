@@ -154,10 +154,12 @@ header #logo {
 
 .banner {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
+    flex-flow: column nowrap;
+    justify-content: center;
     position: relative;
     top: 7rem;   
-    background-image: url(https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QEAI42VYKNDKBF2TMFKB3X5I4J3%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B5C354780-A329-4B50-A9B0-AA0EEFD4713B%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=);
+    background-image: url(pictures/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto 1rem auto;
@@ -165,38 +167,60 @@ header #logo {
     height: 40rem;
 }
 
-.banner .text {
-    background: rgba(0,0,0,.5);
+
+.cover {
+    background-color: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.text {
     display: flex;
     top:0;
     flex-flow: column;
     margin-left: 2rem;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 20rem;
-    min-width: 200px;
-    max-width: 50%;
+    justify-content: space-between; 
+     
+    min-width: 100;
+}
+
+.text {
+    font-size: 18px;
+    row-gap: 10px;
+}
+
+@media only screen and (max-width: 760px) {
+    .text {
+        font-size: 12px;
+    }
 }
 
 .banner .text h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: 200;
     opacity: 0.9;
     color: white;
+    line-height: 5rem;
 }
 
 .banner .text h2 {
-    font-size: 2rem;
+    font-size: 2em;
     opacity: 0.9;
     font-weight: 200;
     color: white;
+    letter-spacing: 3px;
+    
 }
 
 .banner .text h4 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
     opacity: 0.9;
     font-weight: 200;
     color: white;
+    letter-spacing: 3px;
 }
 
 /* Section About us */
@@ -270,7 +294,7 @@ section {
     color: whitesmoke;
     align-items: center;
     justify-content: center;
-    background-image: url(https://northeurope1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=jpg&cs=fFNQTw&docid=https%3A%2F%2Fjdclv-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!AkIKMvAQckes1-bqtgeGHSnrNtXHMFVMixSLnleQgs-JNH97TYaAT6dZXzioT1Pr%2Fitems%2F017TC42QBESNYHW22XN5GI56UX6O2A2I7F%3Fversion%3DPublished&access_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJhdWQiOiIwMDAwMDAwMy0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvamRjbHYtbXkuc2hhcmVwb2ludC5jb21ANDdkNDVlMTQtMjRjOC00Y2E4LWE0YjktM2ExNGU0MWUzNDA5IiwiaXNzIjoiMDAwMDAwMDMtMDAwMC0wZmYxLWNlMDAtMDAwMDAwMDAwMDAwIiwibmJmIjoiMTYzNjk3NzYwMCIsImV4cCI6IjE2MzY5OTkyMDAiLCJlbmRwb2ludHVybCI6Im1ZUS8vR0lsQzZRUm0rNFNsNC8rWW16eDhWQ2VCaW9qdW1TaVpVUDVCMjA9IiwiZW5kcG9pbnR1cmxMZW5ndGgiOiIxMTUiLCJpc2xvb3BiYWNrIjoiVHJ1ZSIsInZlciI6Imhhc2hlZHByb29mdG9rZW4iLCJzaXRlaWQiOiJNekl3WVRReU1ESXRNVEJtTUMwME56Y3lMV0ZqWkRjdFpUWmxZV0kyTURjNE5qRmsiLCJzaWduaW5fc3RhdGUiOiJbXCJrbXNpXCJdIiwibmFtZWlkIjoiMCMuZnxtZW1iZXJzaGlwfHYua29sZXNuaWNoZW5rb0BqZGMtY2lzLmNvbSIsIm5paSI6Im1pY3Jvc29mdC5zaGFyZXBvaW50IiwiaXN1c2VyIjoidHJ1ZSIsImNhY2hla2V5IjoiMGguZnxtZW1iZXJzaGlwfDEwMDM3ZmZlYWQ0NTYwN2NAbGl2ZS5jb20iLCJzZXNzaW9uaWQiOiJiNWM4ZjQ5OS1mNjM2LTQxZmItODk4OS0yNTBjZGI4OTQ1ZjEiLCJ0dCI6IjAiLCJ1c2VQZXJzaXN0ZW50Q29va2llIjoiMyIsImlwYWRkciI6Ijg5LjY0LjY1LjIyNSJ9.MWxOOGhmZWhwbHlRTUg3Undac3Z6VzZWYU94VkFuK2cvakx0N2llcjlSdz0&cTag=%22c%3A%7B7B709324-576B-4C6F-8EFA-97F3B40D23E5%7D%2C2%22&encodeFailures=1&width=1228&height=888&srcWidth=&srcHeight=);
+    background-image: url("pictures/back.jpg");
     background-size: cover;
     background-repeat: repeat;
     width: 80%;
@@ -299,7 +323,7 @@ section {
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .drawing img {
@@ -308,7 +332,7 @@ section {
 }
 
 .drawings h3 {
-    font-size: 0.75rem;
+    font-size: 1.5rem;
     font-weight: 200;
 }
 
